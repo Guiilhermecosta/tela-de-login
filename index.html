@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tag</title>
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="estilo/style.css">
         
 </head>
 <body>
-<form action="Enviar">
+<form action="cadastro.php" method="post">
         <h1>Acessar</h1>
-        <p>Ao acessar sua conta, você concorda com os <a href="#">Termos  de Serviços</a> e consciente com a nossa <a href="#">Politica de Cookies</a> e <a href="#">Politica de Privacidade</a>.</p>
+        <p>
+            Ao acessar sua conta, você concorda com os <a href="#">Termos  de Serviços</a> e consciente com a nossa <a href="#">Politica de Cookies</a> e <a href="#">Politica de Privacidade</a>.
+        </p>
         <section class="conteiner">
-            <label for="e-mail" class="ense"><strong>Endereço de e-mail</strong></label>
-            <input class="inpute" type="e-mail" name="e-mail" id="e-mail" required placeholder="e-mail">
-            <label for="senha" class="ense"><strong>Senha</strong></label>
-            <input class="inpute" type="password" name="senha" id="senha" required placeholder="senha">
+            <label for="imail" class="ense"><strong>Endereço de E-mail</strong></label>
+            <input class="inpute" type="e-mail" name="mail" id="imail" required placeholder="e-mail">
+
+            <label for="isenha" class="ense"><strong>Senha</strong></label>
+            <input class="inpute" type="password" name="senha" id="isenha" required placeholder="senha" minlength="8">
             <button type="submit">Acessar</button>
         </section>
+
       <div class="embrulho">
             <div class="left"></div><span>ou</span>
       <div class="right"></div>
@@ -31,7 +35,6 @@
             <label class="links" id="face"><a href="#">Acessar com o Facebook</a></label>
             
         </section>
-    </form>
-        
+    </form>   
 </body>
 </html>
